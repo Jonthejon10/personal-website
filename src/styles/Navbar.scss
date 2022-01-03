@@ -1,0 +1,139 @@
+.navbar-container {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    padding: 30px;
+    font-size: 1.8rem;
+
+    ul {
+        display: flex;
+        list-style-type: none;
+        margin-left: auto;
+        padding-right: 100px;
+
+        li {
+            padding-top: 0;
+            margin-left: 20px;
+            cursor: pointer;
+
+            // NAV BUTTONS
+            a {
+                width: 190px;
+                padding: 20px;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                overflow: hidden;
+                
+                &:before {
+                    transform: translateX(100%);
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 99.5%;
+                    height: 2px;
+                    border-bottom: 2px solid transparent;
+                    border-left: 2px solid transparent;
+                }
+      
+                &:after {
+                    transform: translateX(-100%);
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 99.5%;
+                    height: 2px;
+                    border-top: 2px solid transparent;
+                    border-right: 2px solid transparent;
+                }
+
+                &:hover {
+                    color: inherit;
+                    text-decoration: none;
+            
+                    &:before {
+                        transition: .1s transform linear, .1s height linear .1s;
+                        transform: translateX(0);
+                        height: 100%;
+                        border-color: #fff;
+                    }
+                    &:after {
+                        transition: .1s transform linear .2s, .1s height linear .3s;
+                        transform: translateX(0);
+                        height: 100%;
+                        border-color: #fff;
+                    }
+                }
+                
+                // NAV BUTTON TEXT
+                span {
+                    text-align: center;
+                    position: relative;
+                    z-index: 1;
+                    color: #dfdbd8;
+                    font-size: 1rem;
+                    letter-spacing: 5px;
+                }
+
+            }
+
+            // ACTIVE BUTTON STYLING AND ANIMATION
+            a.active {
+
+                border: 1px solid #dfdbd8;
+                pointer-events: none;
+
+                .wave {
+                    width: 200px;
+                    height: 200px;
+                    background-color: #444857;
+                    box-shadow: inset 0 0 50px rgba(0,0,0,.5);
+                    position: absolute;
+                    left: 0;
+                    top: -80px;
+                    transition: 0.4s;
+
+                    &::before, &::after {
+                        width: 200%;
+                        height: 200%;
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+                        transform: translate(-50%,-75%);
+                    }
+
+                    &::before {
+                        border-radius: 45%;
+                        background-color: rgba(20,20,20,1);
+                        animation: wave 5s linear infinite;
+                    }
+
+                    &::after {
+                        border-radius: 40%;
+                        background-color: rgba(20,20,20,0.5);
+                        animation: wave 10s linear infinite;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+// BUTTON ANIMATION
+@keyframes wave {
+  0% {
+    transform: translate(-50%,-75%) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(-50%,-75%) rotate(360deg);
+  }
+}
