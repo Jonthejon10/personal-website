@@ -1,0 +1,138 @@
+.about-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about-container h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 5px;
+  padding-top: 40px;
+  color: #9b5d42;
+}
+
+.about-container p {
+  font-size: 1.8rem;
+  padding-top: 20px;
+}
+
+.about-container .skills-container {
+  margin-top: 50px;
+}
+
+.about-container .skills-container .skills-icons-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #dfdbd8;
+}
+
+.about-container .skills-container .skills-icons-div h3 {
+  font-size: 1.7rem;
+}
+
+.about-container .skills-container .skills-icons-div .icon-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 50px;
+  padding-top: 40px;
+}
+
+.about-container .skills-container .skills-icons-div .icon-div img {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  transition: -webkit-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+  transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
+}
+
+.about-container .skills-container .skills-icons-div .icon-div img:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.about-container .skills-container .skills-icons-div .icon-div .mongo-icon {
+  width: 100px;
+}
+
+.about-container .skills-container .skills-icons-div .icon-div .firebase-icon {
+  width: 100px;
+}
+
+.about-container .skills-container .skills-icons-div .icon-div .mongoose-icon {
+  width: 100px;
+  height: 60px;
+  background-image: url("../images/mongoose.png");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-position: center;
+  background-size: contain;
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  transition: -webkit-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+  transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
+  cursor: pointer;
+}
+
+.about-container .skills-container .skills-icons-div .icon-div .mongoose-icon:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.about-container .skills-container .skills-icons-div .languages-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 50%;
+}
+
+.about-container .skills-container .skills-icons-div .icons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about-container .skills-container .skills-icons-div .tools-div {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border-left: 1px solid #dfdbd8;
+}
+
+.about-container .skills-container .skills-icons-div .tools-div h3 {
+  padding-left: 40px;
+}
+
+.about-container .skills-container .skills-icons-div .tools-div .icons-container {
+  padding-left: 40px;
+}
+/*# sourceMappingURL=About.css.map */

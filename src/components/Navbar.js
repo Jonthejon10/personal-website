@@ -15,25 +15,25 @@ const Navbar = () => {
 						spy={true}
 						smooth={true}>
 						<span>HOME</span>
-						<div class='wave'></div>
+						<div className='wave'></div>
 					</Link>
 				</li>
 				<li>
 					<Link to='about' spy={true} smooth={true}>
 						<span>ABOUT</span>
-						<div class='wave'></div>
+						<div className='wave'></div>
 					</Link>
 				</li>
 				<li>
 					<Link to='projects' spy={true} smooth={true}>
 						<span>PROJECTS</span>
-						<div class='wave'></div>
+						<div className='wave'></div>
 					</Link>
 				</li>
 				<li>
 					<Link to='contact' spy={true} smooth={true}>
 						<span>CONTACT</span>
-						<div class='wave'></div>
+						<div className='wave'></div>
 					</Link>
 				</li>
 			</ul>

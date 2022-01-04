@@ -1,0 +1,105 @@
+.about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+        font-size: 4rem;
+        font-weight: 700;
+        letter-spacing: 5px;
+        padding-top: 40px;
+        color: #9b5d42;
+    }
+
+    p {
+        font-size: 1.8rem;
+        padding-top: 20px;
+    }
+
+    .skills-container {
+        margin-top: 50px;
+
+        .skills-icons-div {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid #dfdbd8;;
+
+            h3 {
+                font-size: 1.7rem;
+            }
+            
+            .icon-div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-right: 50px;
+                padding-top: 40px;
+
+                img {
+                    width: 60px;
+                    height: 60px;
+                    cursor: pointer;
+                    transition: transform .5s ease-in-out;
+
+                    &:hover {
+                        transform: rotate(360deg);
+                    }
+                }
+
+                .mongo-icon {
+                    width: 100px;
+                }
+
+
+                .firebase-icon {
+                    width: 100px;
+
+                }
+
+                .mongoose-icon {
+                    width: 100px;
+                    height: 60px;
+                    background-image: url('../images/mongoose.png');                
+                    background-repeat: no-repeat;
+                    background-color: transparent;
+                    background-position: center;
+                    background-size:contain;
+                    transition: transform .5s ease-in-out;
+                    cursor: pointer;
+                    
+                    &:hover {
+                        transform: rotate(360deg);
+                    }
+                }
+            }
+
+            .languages-div {
+                display: flex;
+                flex-direction: column;
+                max-width: 50%;
+
+            }
+            
+            .icons-container {
+                display: flex;
+                flex-wrap: wrap;
+
+            }
+    
+            .tools-div {
+                flex-grow: 1;
+                border-left: 1px solid #dfdbd8;
+
+                h3 {
+                    padding-left: 40px;
+                }
+
+                .icons-container {
+                    padding-left: 40px;
+                }
+            }
+        }
+    }
+}

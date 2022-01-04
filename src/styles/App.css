@@ -3,6 +3,11 @@
   src: url("../fonts/Montserrat-Regular.ttf");
 }
 
+@font-face {
+  font-family: montserrat-bold;
+  src: url("../fonts/Montserrat-bold.ttf");
+}
+
 /* CSS RESET */
 * {
   vertical-align: baseline;
