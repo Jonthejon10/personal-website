@@ -1,0 +1,107 @@
+.slider-container .project-container {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.slider-container .project-container img {
+  width: 1000px;
+}
+
+.slider-container .project-container .project-text-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 80px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.slider-container .project-container .project-text-div h2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.slider-container .project-container .project-text-div .project-btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.slider-container .project-container .project-text-div .project-btn-container .link_wrapper {
+  position: relative;
+}
+
+.slider-container .project-container .project-text-div .project-btn-container a {
+  display: block;
+  width: 250px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  background: #9b5d42;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 3px solid #9b5d42;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+.slider-container .project-container .project-text-div .project-btn-container a:hover {
+  width: 200px;
+  border: 3px solid #dfdbd8;
+  background: transparent;
+  color: #dfdbd8;
+}
+
+.slider-container .project-container .project-text-div .project-btn-container .icon {
+  width: 50px;
+  height: 50px;
+  border: 3px solid transparent;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  right: 0;
+  top: 0;
+  z-index: -1;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+.slider-container .project-container .project-text-div .project-btn-container .icon svg {
+  width: 30px;
+  position: absolute;
+  top: calc(50% - 15px);
+  left: calc(50% - 15px);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  fill: #dfdbd8;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+.slider-container .project-container .project-text-div .project-btn-container a:hover + .icon {
+  border: 3px solid #dfdbd8;
+  right: -25%;
+}
+
+.slider-container .slick-dots li button {
+  border-radius: 10px;
+  background-color: #dfdbd8;
+  color: #565c5e;
+}
+
+.slider-container .slick-next {
+  color: #9b5d42;
+}
+/*# sourceMappingURL=ProjectsSlider.css.map */

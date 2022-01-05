@@ -1,0 +1,96 @@
+.slider-container {
+    
+    .project-container {
+        display: flex !important;
+        
+        img {
+            width: 1000px;
+        }
+
+
+        .project-text-div {
+            display: flex;
+            flex-direction: column;
+            padding-left: 80px;
+            justify-content: space-between;
+            h2 {
+                font-size: 3rem;
+                font-weight: 700;
+            }
+
+            .project-btn-container {
+                display: flex;
+                justify-content: space-between;
+
+                .link_wrapper {
+                    position: relative;
+                }
+
+                a {
+                    display: block;
+                    width: 250px;
+                    height: 50px;
+                    line-height: 50px;
+                    font-weight: bold;
+                    text-decoration: none;
+                    background: #9b5d42;
+                    text-align: center;
+                    color: #fff;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    border: 3px solid #9b5d42;
+                    transition: all .35s;
+
+                    &:hover {
+                        width: 200px;
+                        border: 3px solid #dfdbd8;
+                        background: transparent;
+                        color: #dfdbd8;
+                    }
+                }
+
+                .icon {
+                    width: 50px;
+                    height: 50px;
+                    border: 3px solid transparent;
+                    position: absolute;
+                    transform: rotate(45deg);
+                    right: 0;
+                    top: 0;
+                    z-index: -1;
+                    transition: all .35s;
+
+                    svg {
+                        width: 30px;
+                        position: absolute;
+                        top: calc(50% - 15px);
+                        left: calc(50% - 15px);
+                        transform: rotate(-45deg);
+                        fill: #dfdbd8;
+                        transition: all .35s;
+                    }
+                }
+
+                a:hover + .icon{
+                    border: 3px solid #dfdbd8;
+                    right: -25%;
+                }
+            }
+        }
+    }
+
+    .slick-dots {
+        li {
+            button {
+                border-radius: 10px;
+                background-color: #dfdbd8;
+                color: #565c5e;
+            }
+        }
+    }
+
+    .slick-next {
+        color: #9b5d42;
+    }
+}
+

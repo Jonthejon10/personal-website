@@ -1,0 +1,19 @@
+.projects-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.projects-container h1 {
+  font-size: 4rem;
+  color: #9b5d42;
+  padding-bottom: 100px;
+}
+/*# sourceMappingURL=Projects.css.map */
