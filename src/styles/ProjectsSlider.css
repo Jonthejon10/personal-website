@@ -24,20 +24,27 @@
 
 .slider-container .project-container .project-text-div h2 {
   font-size: 3rem;
-  font-weight: 700;
+  font-family: montserrat-bold;
+}
+
+.slider-container .project-container .project-text-div p {
+  white-space: pre-line;
+  font-size: 1.3rem;
+  line-height: 40px;
 }
 
 .slider-container .project-container .project-text-div .project-btn-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .slider-container .project-container .project-text-div .project-btn-container .link_wrapper {
   position: relative;
+}
+
+.slider-container .project-container .project-text-div .project-btn-container .link_wrapper:nth-of-type(2) {
+  margin-left: 70px;
 }
 
 .slider-container .project-container .project-text-div .project-btn-container a {
@@ -49,12 +56,16 @@
   text-decoration: none;
   background: #9b5d42;
   text-align: center;
-  color: #fff;
+  color: #dfdbd8;
   text-transform: uppercase;
   letter-spacing: 1px;
   border: 3px solid #9b5d42;
   -webkit-transition: all .35s;
   transition: all .35s;
+  font-family: montserrat-bold;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  margin-bottom: 30px;
 }
 
 .slider-container .project-container .project-text-div .project-btn-container a:hover {
@@ -97,11 +108,15 @@
 
 .slider-container .slick-dots li button {
   border-radius: 10px;
-  background-color: #dfdbd8;
-  color: #565c5e;
 }
 
-.slider-container .slick-next {
-  color: #9b5d42;
+.slider-container .slick-dots li button::before {
+  color: #dfdbd8;
+  font-size: 13px;
+}
+
+.slider-container .slick-slider .slick-arrow::before {
+  color: #dfdbd8;
+  font-size: 22px;
 }
 /*# sourceMappingURL=ProjectsSlider.css.map */

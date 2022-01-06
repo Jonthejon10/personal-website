@@ -18,49 +18,51 @@ const ProjectSlider = () => {
         infinite: true,
         speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1
-    }
+        slidesToScroll: 1,
+        autoplay: true,
+      	autoplaySpeed: 10000,
+	}
 
     const projects = [
 		{
 			title: 'Inventory Application',
 			img: inventory,
-			text: 'Lorem ipsum dolor sit amet',
+			text: 'A gimmick game shop made with Express, PUG, SCSS and MongoDB. \n This project follows the MVC design pattern, also showcasing all CRUD operations.\n You can update, delete or create game covers or game genres as you please. ',
 			code_url: 'https://github.com/Jonthejon10/inventory-application',
 			live_url: 'https://young-springs-48093.herokuapp.com/',
 		},
 		{
 			title: 'Fakeddit',
 			img: fakeddit,
-			text: 'Lorem ipsum dolor sit amet',
+			text: 'A Reddit clone made with React, Redux and Firebase for a database. \n Register, post, comment or upvote stuff just like you would on Reddit !',
 			code_url: 'https://github.com/Jonthejon10/fakeddit',
 			live_url: 'https://jonthejon10.github.io/fakeddit/',
 		},
 		{
 			title: 'Shopping Cart',
 			img: shopping_cart,
-			text: 'Lorem ipsum dolor sit amet',
+			text: 'Fake online sword shop made using React and CSS. \n This shop features a shopping cart where you can modify quantities or delete items.',
 			code_url: 'https://github.com/Jonthejon10/shopping-cart',
 			live_url: 'https://jonthejon10.github.io/shopping-cart/',
 		},
 		{
 			title: 'Where is Waldo ?',
 			img: waldo,
-			text: 'Lorem ipsum dolor sit amet',
+			text: 'My take on the traditional Where is Waldo game, made with React, CSS and Firebase as a database. \n Featuring a scoreboard with best scores and a custom cursor, \n try your best to find the 3 iconic video games characters.',
 			code_url: 'https://github.com/Jonthejon10/where-is-waldo',
 			live_url: 'https://jonthejon10.github.io/where-is-waldo/',
 		},
 		{
 			title: 'Battleship',
 			img: battleship,
-			text: 'Lorem ipsum dolor sit amet',
+			text: 'Battleship game made using HTML, vanilla JS, CSS and Jest. \n The theme for this project was unit testing, the development processs \n was basically dictated by the tests I conceived in the starting phases.',
 			code_url: 'https://github.com/Jonthejon10/Battleship',
 			live_url: 'https://jonthejon10.github.io/Battleship/',
 		},
 		{
 			title: 'TNW Clone',
 			img: tnw,
-			text: 'Lorem ipsum dolor sit amet',
+			text: 'A copy of a TNW article, made solely with HTML and CSS. \n The aim for this one was to build a responsive website using flexbox and grid.',
 			code_url: 'https://github.com/Jonthejon10/tnw-clone',
 			live_url: 'https://jonthejon10.github.io/tnw-clone/',
 		},
@@ -79,26 +81,10 @@ const ProjectSlider = () => {
 								<p>{item.text}</p>
 
 								<div className='project-btn-container'>
-{/* 									<button
-										className='project-btn'
-										type='button'
-										onClick={() =>
-											window.open(item.code_url)
-										}>
-										Check the repo
-									</button>
-									<button
-										className='project-btn'
-										type='button'
-										onClick={() =>
-											window.open(item.live_url)
-										}>
-										See it live
-                                    </button> */}
-                                    
-									<div class='link_wrapper'>
+
+									<div className='link_wrapper'>
 										<a href={`${item.code_url}`} target="_blank" rel="noreferrer">Check the repo</a>
-										<div class='icon'>
+										<div className='icon'>
 											<svg
 												xmlns='http://www.w3.org/2000/svg'
 												viewBox='0 0 268.832 268.832'>
@@ -107,9 +93,9 @@ const ProjectSlider = () => {
 										</div>
 									</div>
 
-                                    <div class='link_wrapper'>
+                                    <div className='link_wrapper'>
 										<a href={`${item.live_url}`} target="_blank" rel="noreferrer">See it live</a>
-										<div class='icon'>
+										<div className='icon'>
 											<svg
 												xmlns='http://www.w3.org/2000/svg'
 												viewBox='0 0 268.832 268.832'>

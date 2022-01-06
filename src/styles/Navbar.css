@@ -8,6 +8,7 @@
   display: flex;
   padding: 30px;
   font-size: 1.8rem;
+  z-index: 300;
 }
 
 .navbar-container ul {
@@ -132,15 +133,15 @@
 .navbar-container ul li a.active .wave::before {
   border-radius: 45%;
   background-color: #141414;
-  -webkit-animation: wave 10s linear infinite;
-          animation: wave 10s linear infinite;
+  -webkit-animation: wave 7s linear infinite;
+          animation: wave 7s linear infinite;
 }
 
 .navbar-container ul li a.active .wave::after {
   border-radius: 40%;
   background-color: rgba(20, 20, 20, 0.5);
-  -webkit-animation: wave 20s linear infinite;
-          animation: wave 20s linear infinite;
+  -webkit-animation: wave 14s linear infinite;
+          animation: wave 14s linear infinite;
 }
 
 @-webkit-keyframes wave {

@@ -1,0 +1,45 @@
+.quicklinks-container {
+  position: fixed;
+  right: 0;
+  top: 30%;
+  width: 100px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 300;
+}
+
+.quicklinks-container .quicklink-btn {
+  background-color: transparent;
+  background-position: center;
+  background-size: cover;
+  border: none;
+  width: 40px;
+  height: 40px;
+  opacity: .4;
+  cursor: pointer;
+}
+
+.quicklinks-container .quicklink-btn:hover {
+  opacity: 1;
+}
+
+.quicklinks-container .git-btn {
+  background-image: url("../images/github-icon.svg");
+}
+
+.quicklinks-container .linkedin-btn {
+  background-image: url("../images/linkedin.svg");
+}
+/*# sourceMappingURL=QuickLinks.css.map */

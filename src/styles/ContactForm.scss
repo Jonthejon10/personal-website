@@ -1,0 +1,81 @@
+.contact-form-container {
+    max-width: 800px;
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        
+        input, textarea {
+            padding: 15px;
+            background-color: transparent;
+            color: #dfdbd8;
+            border: 2px solid #636161;
+            font-family: montserrat-bold;
+            letter-spacing: 2px;
+            margin-top: 20px;
+        }
+
+        .link_wrapper {
+            position: relative;
+            width: 280px;
+        }
+    
+        button {
+            margin-top: 40px;
+            display: block;
+            width: 280px;
+            height: 50px;
+            line-height: 50px;
+            font-weight: bold;
+            text-decoration: none;
+            background: #9b5d42;
+            text-align: center;
+            color: #dfdbd8;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: 3px solid #9b5d42;
+            transition: all .35s;
+            font-family: montserrat-bold;
+            letter-spacing: 2px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+            cursor: pointer;
+    
+            &:hover {
+                width: 250px;
+                border: 3px solid #dfdbd8;
+                background: transparent;
+                color: #dfdbd8;
+            }
+        }
+    
+        .icon {
+            width: 50px;
+            height: 50px;
+            border: 3px solid transparent;
+            position: absolute;
+            transform: rotate(45deg);
+            right: 0;
+            top: 40px;
+            z-index: -1;
+            transition: all .35s;
+    
+            svg {
+                width: 30px;
+                position: absolute;
+                top: calc(50% - 15px);
+                left: calc(50% - 15px);
+                transform: rotate(-45deg);
+                fill: #dfdbd8;
+                transition: all .35s;
+            }
+        }
+    
+        button:hover + .icon{
+            border: 3px solid #dfdbd8;
+            right: -25%;
+        }
+    }
+
+
+}

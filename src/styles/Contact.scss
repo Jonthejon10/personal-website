@@ -1,0 +1,25 @@
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    
+    h1 {
+        font-size: 4rem;
+        color: #9b5d42;
+        padding-bottom: 100px;
+        font-family: montserrat-bold;
+        letter-spacing: 5px;
+    }
+
+    .goodbye-message {
+        padding-top: 50px;
+        font-size: 2rem;
+
+        span {
+            color: #598ba0;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+    }
+}

@@ -1,4 +1,4 @@
-.projects-container {
+.contact-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9,13 +9,25 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
 }
 
-.projects-container h1 {
+.contact-container h1 {
   font-size: 4rem;
   color: #9b5d42;
   padding-bottom: 100px;
-  letter-spacing: 5px;
   font-family: montserrat-bold;
+  letter-spacing: 5px;
 }
-/*# sourceMappingURL=Projects.css.map */
+
+.contact-container .goodbye-message {
+  padding-top: 50px;
+  font-size: 2rem;
+}
+
+.contact-container .goodbye-message span {
+  color: #598ba0;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+/*# sourceMappingURL=Contact.css.map */
