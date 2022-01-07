@@ -35,6 +35,9 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 40px;
   padding-bottom: 40px;
   border-bottom: 1px solid #dfdbd8;
@@ -136,7 +139,8 @@
 }
 
 .about-container .skills-container .skills-icons-div .tools-div h3 {
-  padding-left: 40px;
+  padding-left: 20px;
+  overflow-wrap: break-word;
 }
 
 .about-container .skills-container .skills-icons-div .tools-div .icons-container {
@@ -197,7 +201,6 @@
   }
   .about-container .tools-div {
     overflow: scroll;
-    margin-top: 25px;
   }
 }
 

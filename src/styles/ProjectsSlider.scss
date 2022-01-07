@@ -7,7 +7,6 @@
             max-width: 1000px;
         }
 
-
         .project-text-div {
             display: flex;
             flex-direction: column;
@@ -27,7 +26,6 @@
 
             .project-btn-container {
                 display: flex;
-
 
                 .link_wrapper {
                     position: relative;
@@ -145,6 +143,7 @@
                 justify-content: center;
             }
             .project-text-div {
+                overflow: scroll;
                 h2 {
                     font-size: 1.5rem !important;
                 }
@@ -171,8 +170,8 @@
         @media only screen and (max-width: 390px) {
             .project-text-div {
                 p {
-                    line-height: 22px !important;
-                    font-size: .9rem !important;
+                    line-height: 23px !important;
+                    font-size: 1rem !important;
                 }
 
             }
