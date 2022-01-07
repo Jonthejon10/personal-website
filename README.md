@@ -6,4 +6,4 @@ This website serves as a way to get to know me better, while also being able to 
 
 <a href='https://jonthejon10.github.io/personal-website/'>Live preview</a>
 
-<img src='src/public/images/preview.gif' alt=''>
+<img src='src/images/preview.gif' alt=''>
