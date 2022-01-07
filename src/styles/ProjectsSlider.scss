@@ -150,6 +150,7 @@
                 }
 
                 p {
+                    line-height: 25px !important;
                     font-size: 1.1rem !important;
                 }
             }
@@ -159,20 +160,29 @@
 
                 .link_wrapper {
                     margin-left: 0px !important;
-
+                    a {
+                        margin-bottom: 15px !important;
+                    }
                 }
                 
             }
         }
         
-        @media only screen and (max-width: 380px) {
-            p {
-                line-height: 22px !important;
-            }
-            .link_wrapper {
-                a {
-                    margin-bottom: 10px !important;
+        @media only screen and (max-width: 390px) {
+            .project-text-div {
+                p {
+                    line-height: 22px !important;
+                    font-size: .9rem !important;
                 }
+
+            }
+            .project-btn-container {
+                .link_wrapper {
+                    a {
+                        margin-bottom: 5px !important;
+                    }
+                }
+
             }
         }
     }
