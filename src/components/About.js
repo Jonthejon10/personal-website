@@ -14,7 +14,7 @@ const About = () => {
 				<p>
 					I started my programming journey back in April 2021, a month
 					later I stumbled upon The Odin Project, <br></br>
-					and after many projects, frustrations and successes here we
+					and after many projects, frustrations and successes, here we
 					are.
 				</p>
 				<p>

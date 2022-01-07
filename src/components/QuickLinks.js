@@ -9,7 +9,7 @@ const QuickLinks = () => {
 				onClick={() => window.open('https://github.com/Jonthejon10')}
 				className='quicklink-btn git-btn'
 			/>
-			<button type='button' className='quicklink-btn linkedin-btn' />
+			<button type='button' className='quicklink-btn linkedin-btn' onClick={() => window.open('https://www.linkedin.com/in/ionut-ianchis-80697122a/')} />
 		</div>
 	)
 }
