@@ -1,13 +1,12 @@
 import React from 'react'
 import '../styles/Navbar.css'
 import { Link } from 'react-scroll'
+import HamburgerMenu from './HamburgerMenu'
 
 const Navbar = () => {
 	return (
 		<div className='navbar-container'>
-			<p>Logo</p>
-
-			<ul>
+			<ul className='navbar-list'>
 				<li>
 					<Link
 						activeClass='active'
@@ -37,6 +36,10 @@ const Navbar = () => {
 					</Link>
 				</li>
 			</ul>
+
+			<div className='hamburger-menu-container'>
+				<HamburgerMenu />
+			</div>
 		</div>
 	)
 }

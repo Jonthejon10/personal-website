@@ -32,4 +32,10 @@
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
 }
+
+@media only screen and (max-width: 370px) {
+  .footer-container .git-button {
+    margin-left: 5px;
+  }
+}
 /*# sourceMappingURL=Footer.css.map */

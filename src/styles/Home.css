@@ -9,6 +9,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
 }
 
 .home-container .bg {
@@ -179,7 +180,7 @@
 .home-container .scrolldown-container {
   position: absolute;
   bottom: 0;
-  padding-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .home-container .scrolldown {
@@ -331,6 +332,48 @@
   100% {
     -webkit-transform: translateX(25%);
             transform: translateX(25%);
+  }
+}
+
+@media only screen and (max-width: 957px) {
+  .home-container .home-container h1 {
+    font-size: 5.5rem;
+  }
+  .home-container .home-container h2 {
+    font-size: 3rem;
+  }
+  .home-container .home-container h3 {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .home-container h1 {
+    font-size: 3.5rem !important;
+  }
+  .home-container h2 {
+    font-size: 2.5rem !important;
+  }
+  .home-container h3 {
+    font-size: 1.5rem !important;
+  }
+}
+
+@media only screen and (max-width: 485px) {
+  .home-container h1 {
+    font-size: 3rem !important;
+  }
+  .home-container h2 {
+    font-size: 2rem !important;
+  }
+  .home-container h3 {
+    font-size: 1.3rem !important;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .home-container .scrolldown-container {
+    margin-bottom: 10px !important;
   }
 }
 /*# sourceMappingURL=Home.css.map */

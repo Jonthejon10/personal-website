@@ -2,13 +2,12 @@
     position: fixed;
     right: 0;
     top: 30%;
-    width: 100px;
+    width: 50px;
     height: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    z-index: 300;
 
     .quicklink-btn {
         background-color: transparent;
@@ -17,7 +16,7 @@
         border: none;
         width: 40px;
         height: 40px;
-        opacity: .4;
+        opacity: .2;
         cursor: pointer;
 
         &:hover {
@@ -31,5 +30,16 @@
 
     .linkedin-btn {
         background-image: url('../images/linkedin.svg');
+    }
+}
+
+@media only screen and (max-width: 957px) {
+    .quicklinks-container {
+        height: 75px;
+
+        .quicklink-btn {
+            width: 30px !important;
+            height: 30px !important;
+        }
     }
 }

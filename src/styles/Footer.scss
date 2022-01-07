@@ -23,4 +23,10 @@
             transform: rotate(360deg);
         }
     }
+
+    @media only screen and (max-width: 370px) {
+        .git-button {
+            margin-left: 5px;
+        }
+    }
 }

@@ -18,4 +18,11 @@
   letter-spacing: 5px;
   font-family: montserrat-bold;
 }
+
+@media only screen and (max-width: 1550px) {
+  .projects-container h1 {
+    padding-bottom: 0;
+    font-size: 2rem !important;
+  }
+}
 /*# sourceMappingURL=Projects.css.map */

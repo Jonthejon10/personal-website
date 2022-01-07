@@ -35,7 +35,7 @@ html {
 
 body {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
 }
 
 body #root {
@@ -52,6 +52,7 @@ body #root .container .content-container {
   width: 100vw;
   height: 100vh;
   scroll-snap-align: start;
-  padding: 100px;
+  padding: 50px;
+  overflow: hidden;
 }
 /*# sourceMappingURL=App.css.map */

@@ -5,7 +5,7 @@
 }
 
 .slider-container .project-container img {
-  width: 1000px;
+  max-width: 1000px;
 }
 
 .slider-container .project-container .project-text-div {
@@ -118,5 +118,67 @@
 .slider-container .slick-slider .slick-arrow::before {
   color: #dfdbd8;
   font-size: 22px;
+}
+
+@media only screen and (max-width: 1550px) {
+  .slider-container .project-container {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    margin-top: 10px;
+  }
+  .slider-container .project-container img {
+    max-width: 750px;
+  }
+  .slider-container .project-container .project-text-div {
+    padding-left: 0;
+  }
+  .slider-container .project-container .project-text-div h2 {
+    font-size: 2rem;
+  }
+  .slider-container .project-container .project-text-div p {
+    font-size: 1.2rem;
+  }
+  .slider-container .project-container .project-btn-container {
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+  }
+}
+
+@media only screen and (max-width: 1550px) and (max-width: 671px) {
+  .slider-container .project-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .slider-container .project-text-div h2 {
+    font-size: 1.5rem !important;
+  }
+  .slider-container .project-text-div p {
+    font-size: 1.1rem !important;
+  }
+  .slider-container .project-btn-container {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+  }
+  .slider-container .project-btn-container .link_wrapper {
+    margin-left: 0px !important;
+  }
+}
+
+@media only screen and (max-width: 1550px) and (max-width: 380px) {
+  .slider-container p {
+    line-height: 22px !important;
+  }
+  .slider-container .link_wrapper a {
+    margin-bottom: 10px !important;
+  }
 }
 /*# sourceMappingURL=ProjectsSlider.css.map */
